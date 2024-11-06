@@ -1,5 +1,5 @@
 import styles from './page.module.scss';
-import { ClientComponent } from './_components/ClientComponent';
+import { ClientComponent } from '@css-module-reprex/ui';
 
 export default function Index() {
   /*
