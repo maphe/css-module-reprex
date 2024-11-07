@@ -1,5 +1,5 @@
 import styles from './page.module.scss';
-import { ClientComponent } from '@css-module-reprex/ui';
+import { ServerComponent } from '@css-module-reprex/ui';
 
 export default function Index() {
   /*
@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <div className={styles.page}>
       <h1>Server-Side Rendered</h1>
-      <ClientComponent />
+      <ServerComponent prop1="test" />
     </div>
   );
 }

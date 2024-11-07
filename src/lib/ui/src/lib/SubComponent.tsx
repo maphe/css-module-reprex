@@ -10,10 +10,14 @@ const formatCount = (num: number): string => {
   }
 }
 
-export const SubComponent = () => {
+type SubComponentProps = {
+  prop1: string;
+}
+
+export const SubComponent = (props: SubComponentProps) => {
   return (
     <div className={styles.container}>
-      <h3>SubComponent {formatCount(8364893746)}</h3>
+      <h3>SubComponent {props.prop1} {formatCount(8364893746)}</h3>
     </div>
   );
 }
